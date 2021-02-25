@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        name = "Articdive's nexus repository"
+        url = uri("https://repo.minestom.com/repository/maven-public/")
+    }
+}
+
+dependencies {
+    implementation("de.articdive:jnoise:2.0.0")
+}
